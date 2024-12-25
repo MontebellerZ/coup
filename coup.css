@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: 'oriental';
+	src: url(font/moyko.ttf);
+}
+
+@font-face{
+	font-family: 'go';
+	src: url(font/go.ttf);
+}
+
+html{
+	height: 100%;
+	font-family: 'oriental';
+	font-size: 20px;
+}
+
+body{
+	background-image: url("imgs/japan.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+button{
+	padding: 5px;
+}
+
+#principal{
+	background-color: rgba(255, 250, 230, 0.7);
+	border: 10px solid rgba(153, 131, 41, 1);
+	margin: 15px 15px 0;
+	padding: 15px 0px;
+	width: 870px;
+	position: absolute;
+}
+
+#nome{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 5px;
+	border: 3px solid black;
+	font-family: oriental;
+	font-size: 25px;
+	color: orange;
+}
+
+#nome b{
+	color: black;
+}
+
+#nome a{
+	font-size: 18px;
+	color: black;
+}
+
+#salas{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+#salas a{
+	font-family: 'go';
+	text-decoration: none;
+}
+
+.sala{
+	margin: 0px 15px 0px 0px;
+	height: 264px;
+	width: 264px;
+	float: left;
+	background-color: rgba(0,0,0,0.3);
+	border: 3px solid black;
+	text-align: center;
+	font-size: 30px;
+}
+
+.info{
+	color: rgb(84, 16, 143);
+}
+
+.sala b{
+	font-size: 40px;
+	color: rgb(165, 61, 255);
+	text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;
+}
+
+#chat{
+	float: left;
+	margin: 15px 16px 0 15px;
+	width: 340px;
+	padding: 10px;
+	border: 3px solid black;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,0.2);
+	font-family: arial;
+	line-height: 20px;
+	font-size: 18px;
+	text-align: center;
+	user-select: none;
+}
+
+#msgs{
+	height: 180px;
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;
+	background-color: rgba(255,255,255,0.6);
+	text-align: left;
+	overflow-wrap: break-word;
+	overflow: auto;
+	user-select: text;
+}
+
+#entrada{
+	height: 20px;
+	width: 80%;
+	border-radius: 3px;
+	padding: 5px;
+	padding-right: 40px;
+	border: 2px solid black;
+	position: relative;
+	user-select: text;
+}
+
+#btn-enviar{
+	width: 35px;
+	height: 30px;
+	margin-left: -42px;
+	position: relative;
+}
+
+#temas{
+	float: left;
+	position: relative;
+	padding: 10px;
+	width: 432px;
+	height: 267px;
+	margin: 15px 0px 0px 0px;
+	border: 3px solid black;
+	border-radius: 3px;
+	text-align: center;
+	user-select: none;
+}
+
+#show{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.card{
+	float: left;
+	height: 120px;
+	width: 84px;
+	border-radius: 2px; 
+	margin: 0px 1px;
+}
+
+#lema{
+	position: absolute;
+	text-align: center;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 10px;
+	color: black;
+}
+
+#duque{
+	color: rgb(156, 75, 191);
+}
+
+#embaixador{
+	color: rgb(31, 115, 32);
+}

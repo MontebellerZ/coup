@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coup</title>
+    <link href="coup.css" rel="stylesheet" type="text/css" />
+    <script src="coup.js"></script>
+	<script src="https://kit.fontawesome.com/092d3f6b65.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body onload="nome(); escolha(1);">
+	<div id="principal">
+		<div id="nome">
+			<b>Jogando como: </b>
+		</div>
+
+		<div id="salas">
+			<a href="sala1.html" class="sala">
+				<div id="sala1">
+					<div class="info">
+						<b>SALA 1</b>
+						<div id="n_players1">Players:</div>
+					</div>
+					
+				</div>
+			</a>
+
+			<a href="sala2.html" class="sala">
+				<div id="sala2">
+					<div class="info">
+						<b>SALA 2</b>
+						<div id="n_players2">Players:</div>
+					</div>
+					
+				</div>
+			</a>
+
+			<a href="sala3.html" class="sala">
+				<div id="sala3">
+					<div class="info">
+						<b>SALA 3</b>
+						<div id="n_players3">Players:</div>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+
+		<div id="baixo">
+			<div id="chat">
+				<div id="conectar">
+					<label><b>Chat:</b></label>
+					<button id="btn-coup1" onclick="conectar(1);">SALA 1</button>
+					<button id="btn-coup2" onclick="conectar(2);">SALA 2</button>
+					<button id="btn-coup3" onclick="conectar(3);">SALA 3</button>
+					<button id="btn-duvidas" onclick="conectar(3);">DÚVIDAS</button>
+				</div>
+
+				<div id="msgs">
+				</div>
+				<input id="entrada" type="text" placeholder="Digite...">
+				<button id="btn-enviar" onclick="enviar();" disabled><i class="fas fa-paper-plane"></i></button>
+			</div>
+			<div id="temas">
+				<label>
+					<b>Tema:</b> 
+					<button id="opt1" onclick="escolha(1);">Japanese</button>
+					<button id="opt2" onclick="escolha(2);">European</button>
+					<button id="opt3" onclick="escolha(3);">Pirate</button>
+				</label>
+				<div id="show">
+					
+				</div>
+				<div id="lema"><b>Lema:</b> <b id="duque">Todo mundo eh Duque e </b><b id="embaixador">todo mundo eh Embaixador.</b></div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var input = document.getElementById("entrada");
+		input.addEventListener("keyup", function(event) {
+		  	if (event.keyCode === 13) {
+		   		event.preventDefault();
+		   		document.getElementById("btn-enviar").click();
+		  	}
+		});
+	</script>
+
+
+	
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/7.16.0/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/7.16.0/firebase-analytics.js"></script>
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+</body>
+
+</html>
